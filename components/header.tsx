@@ -1,4 +1,5 @@
 import { Trophy } from "phosphor-react"
+import { useThemeContext } from "../contexts/theme.context";
 import { Toggle } from "./switch";
 
 export const Header = () => {
