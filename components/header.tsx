@@ -14,7 +14,6 @@ export const Header = () => {
         <ul 
         className={`flex justify-center items-center cursor-pointer ${theme === "dark" ? "text-gray-100" : "text-gray-900"}`}>
           <li className="p-2 font-bold border-b-2 border-transparent hover:border-b-purple-800">Início</li>
-          <li className="p-2 font-bold border-b-2 border-transparent hover:border-b-purple-800">Sobre</li>
           <li className="p-2 font-bold border-b-2 border-transparent hover:border-b-purple-800">Habilidades</li>
           <li className="p-2 font-bold border-b-2 border-transparent hover:border-b-purple-800">Projetos</li>
           <li className="p-2 font-bold border-b-2 border-transparent hover:border-b-purple-800">Redes Sociais</li>
