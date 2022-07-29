@@ -12,7 +12,7 @@ export const Toggle = () => {
       checked={darkMode}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       onChange={() => setDarkMode(!darkMode)}
-      className={`${darkMode ? 'bg-purple-800' : 'bg-neutral-400'
+      className={`${darkMode ? 'bg-purple-800' : 'bg-neutral-900'
         } relative inline-flex h-6 w-12 items-center rounded-full transition-colors`}
     >
       <span className="sr-only">Enable notifications</span>
