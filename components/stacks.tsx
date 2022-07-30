@@ -17,7 +17,7 @@ export const Stacks = ({ stackTitle, paragraph, icon, type }: props) => {
     <Link href="">
       <div
         className={`w-[300px] h-[300px] ${theme === "dark" ? "bg-[#222222]" : "bg-[#EFEFEF]"} 
-        mx-2 flex flex-col justify-around items-start p-3 shadow-sm shadow-black cursor-pointer hover:bg-purple-800 group rounded-md`}>
+        mx-2 flex flex-col justify-around items-start p-4 shadow-md shadow-black cursor-pointer hover:bg-purple-800 group rounded-md`}>
         <>
           {icon}
         </>
@@ -32,19 +32,16 @@ export const Stacks = ({ stackTitle, paragraph, icon, type }: props) => {
         {type === "front-end" &&
           <span className="text-purple-800 group-hover:text-gray-100 font-bold flex items-center">
             Projetos Front-end
-            <ArrowRight size={30} weight="bold" className="transition-colors mt-[2px]" />
           </span>
         }
         {type === "back-end" &&
           <span className="text-purple-800 group-hover:text-gray-100 font-bold flex items-center">
             Projetos Back-end
-            <ArrowRight size={30} weight="bold" className="transition-colors mt-[2px]" />
           </span>
         }
         {type === "mobile" &&
           <span className="text-purple-800 group-hover:text-gray-100 font-bold flex items-center">
             Projetos Mobile
-            <ArrowRight size={30} weight="bold" className="transition-colors mt-[2px]" />
           </span>
         }
       </div>
