@@ -10,7 +10,7 @@ type props = {
   type: "front-end" | "back-end" | "mobile"
 }
 
-export const Stacks = ({ stackTitle, paragraph, icon, type }: props) => {
+export const Projects = ({ stackTitle, paragraph, icon, type }: props) => {
   const { theme } = useThemeContext();
 
   return (
