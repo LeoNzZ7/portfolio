@@ -1,32 +1,33 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Autoplay, Controller } from 'swiper';
-import { Book, Star } from 'phosphor-react';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export const Stacks = () => {
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation } from "swiper";
+
+export function Stacks() {
   return (
-    <Swiper
-      slidesPerView={4}
-      loop={true}
-      autoplay={{
-        delay: 5000,
-        disableOnInteraction: false
-      }}
-      modules={[Autoplay, Controller]}
-      className="w-[750px] bg-red-200 flex"
-    >
-      <SwiperSlide>
-        <Star size={50} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Book size={50} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Star size={50} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Book size={50} />
-      </SwiperSlide>
-    </Swiper>
+    <>
+      <Swiper 
+        navigation={true} 
+        loop={true}
+        slidesPerView={4}
+        modules={[Navigation]}
+        className="text-gray-100 w-[980px] mt-20"
+        >
+          <SwiperSlide className="flex justify-center" >HTML5</SwiperSlide>
+          <SwiperSlide className="flex justify-center"  >CSS3</SwiperSlide>
+          <SwiperSlide className="flex justify-center" >JAVASCRIPT</SwiperSlide>
+          <SwiperSlide className="flex justify-center" >REACTJS</SwiperSlide>
+          <SwiperSlide className="flex justify-center" >REACT NATIVE</SwiperSlide>
+          <SwiperSlide className="flex justify-center" >NEXTJS</SwiperSlide>
+          <SwiperSlide className="flex justify-center" >NODEJS</SwiperSlide>
+          <SwiperSlide className="flex justify-center" >SQL</SwiperSlide>
+      </Swiper>
+    </>
   );
 }

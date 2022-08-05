@@ -18,7 +18,10 @@ const Home = () => {
       <header className="h-[75px] w-screen" >
         <Header />
       </header>
-        <Presentation />
+        <div>
+          <Presentation />
+        </div>
+      <Stacks />
       <div className="flex justify-center w-screen mt-20 none">
         <Projects
           type="front-end"
