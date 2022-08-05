@@ -3,6 +3,7 @@ import { Database, Desktop, DeviceMobile } from "phosphor-react";
 import { Header } from "../components/header";
 import { Presentation } from "../components/presentation";
 import { Projects } from "../components/projects";
+import { Stacks } from "../components/stacksSlider";
 import { useThemeContext } from "../contexts/theme.context";
 
 const Home = () => {
