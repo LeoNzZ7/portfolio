@@ -21,7 +21,10 @@ const Home = () => {
         <div>
           <Presentation />
         </div>
-      <Stacks />
+      <div className="text-purple-900 flex items-center flex-col" >
+        <h1 className="mt-20 text-[40px] font-bold">Tecnologias</h1>
+        <Stacks/>
+      </div>
       <div className="flex justify-center w-screen mt-20 none">
         <Projects
           type="front-end"

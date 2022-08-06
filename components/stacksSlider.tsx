@@ -1,12 +1,6 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
-// import required modules
 import { Navigation } from "swiper";
 
 export function Stacks() {
@@ -17,16 +11,29 @@ export function Stacks() {
         loop={true}
         slidesPerView={4}
         modules={[Navigation]}
-        className="text-gray-100 w-[980px] mt-20"
+        className="w-[1000px] mt-10"
         >
-          <SwiperSlide className="flex justify-center" >HTML5</SwiperSlide>
-          <SwiperSlide className="flex justify-center"  >CSS3</SwiperSlide>
-          <SwiperSlide className="flex justify-center" >JAVASCRIPT</SwiperSlide>
-          <SwiperSlide className="flex justify-center" >REACTJS</SwiperSlide>
-          <SwiperSlide className="flex justify-center" >REACT NATIVE</SwiperSlide>
-          <SwiperSlide className="flex justify-center" >NEXTJS</SwiperSlide>
-          <SwiperSlide className="flex justify-center" >NODEJS</SwiperSlide>
-          <SwiperSlide className="flex justify-center" >SQL</SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <img className="w-auto h-[100px]" src="./images/html.png" />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <img className="w-auto h-[100px]" src="./images/css.png" />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <img className="w-auto h-[100px]" src="./images/javascript.png" />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <img className="w-auto h-[100px] p-1" src="./images/typescript.png" />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <img className="w-auto h-[100px]" src="./images/react.png" />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <img className="w-auto h-[100px]" src="./images/next.png" />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <img className="w-auto h-[80px]" src="./images/node.png" />
+          </SwiperSlide>
       </Swiper>
     </>
   );
